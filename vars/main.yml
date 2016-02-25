@@ -1,0 +1,52 @@
+---
+downloads: ~/.ansible-downloads/
+
+dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
+dotfiles_repo_local_destination: ~/Dropbox/Development/GitHub/dotfiles
+dotfiles_files:
+  - .gitconfig
+  - .gitignore
+  - .inputrc
+  - .osx
+  - .vimrc
+
+homebrew_installed_packages:
+  - ansible
+  - autoconf
+  - boot2docker
+  - docker
+  - git
+  - gpg
+  - hub
+  - packer
+  - python
+  - mcrypt
+  - nvm
+  - ssh-copy-id
+  - openssl
+  - wget
+  - curl
+  - wrk
+  - brew-cask
+
+homebrew_taps:
+  - caskroom/cask
+  - homebrew/binary
+  - homebrew/dupes
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - adium
+  - google-chrome
+  - dropbox
+  - fing
+  - licecap
+  - macvim
+  - menumeters
+  - nvalt
+  - skype
+  - seil
+  - vagrant
+  - vagrant-manager
+  - vlc
+  - virtualbox
