@@ -1,0 +1,3 @@
+---
+- src: geerlingguy.dotfiles
+- src: geerlingguy.homebrew
