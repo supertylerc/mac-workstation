@@ -39,6 +39,7 @@ homebrew_cask_apps:
   - google-chrome
   - dropbox
   - fing
+  - iterm2
   - licecap
   - macvim
   - menumeters
