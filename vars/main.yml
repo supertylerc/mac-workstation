@@ -27,7 +27,6 @@ homebrew_installed_packages:
   - wget
   - curl
   - wrk
-  - brew-cask
 
 homebrew_taps:
   - caskroom/cask
