@@ -1,13 +1,15 @@
 ---
 downloads: ~/.ansible-downloads/
-dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
+dotfiles_repo: https://github.com/supertylerc/dotfiles.git
 dotfiles_repo_local_destination: ~/Dropbox/Development/GitHub/dotfiles
 dotfiles_files:
   - .gitconfig
   - .gitignore
   - .inputrc
-  - .osx
+  - tmux.conf
   - .vimrc
+  - .zpreztorc
+  - .zshrc
 
 homebrew_upgrade_all_packages: yes
 homebrew_installed_packages:
