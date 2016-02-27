@@ -40,8 +40,9 @@
       git:
         repo: https://github.com/carlhuda/janus
         dest: ~/.vim
+        update: no
 
-    - name: Install Janus
+    - name: Install/Update Janus
       command: rake chdir=~/.vim
 
     - name: Install gem_home
