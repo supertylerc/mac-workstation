@@ -43,3 +43,6 @@
 
     - name: Install Janus
       command: rake chdir=~/.vim
+
+    - name: Install gem_home
+      command: brew install --HEAD https://raw.github.com/postmodern/gem_home/master/homebrew/gem_home.rb
