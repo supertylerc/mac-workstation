@@ -1,5 +1,6 @@
 ---
 - hosts: localhost
+  # TODO: Make this a variable
   user: tyler
   connection: local
 
@@ -18,7 +19,7 @@
       shell: ~/.osx --no-restart
       changed_when: false
 
-    # This should be a role...
+    # TODO: Make this a role
     - name: Clone Prezto
       git:
         repo: https://github.com/sorin-ionescu/prezto
@@ -35,7 +36,7 @@
         - zprofile
         - zshenv
 
-    # This should be a role...
+    # TODO: Make this a role
     - name: Clone Janus
       git:
         repo: https://github.com/carlhuda/janus
@@ -45,6 +46,7 @@
     - name: Install/Update Janus
       command: rake chdir=~/.vim
 
+    # TODO: Make this idempotent
     - name: Install gem_home
       command: brew install --HEAD https://raw.github.com/postmodern/gem_home/master/homebrew/gem_home.rb
 
