@@ -15,18 +15,19 @@ homebrew_installed_packages:
   - autoconf
   - boot2docker
   - chruby
+  - curl
   - docker
   - git
   - gpg
   - hub
-  - packer
-  - python
   - mcrypt
   - nvm
-  - ssh-copy-id
   - openssl
+  - packer
+  - python
+  - ssh-copy-id
+  - tmux
   - wget
-  - curl
   - wrk
 
 homebrew_taps:
