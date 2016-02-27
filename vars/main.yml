@@ -6,7 +6,7 @@ dotfiles_files:
   - .gitconfig
   - .gitignore
   - .osx
-  - tmux.conf
+  - .tmux.conf
   - .zpreztorc
   - .zshrc
 
