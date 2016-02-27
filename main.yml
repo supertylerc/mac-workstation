@@ -1,6 +1,6 @@
 ---
 - hosts: localhost
-  user: {{ mac_workstation_user }}
+  user: "{{ mac_workstation_user }}"
   connection: local
 
   vars_files:
