@@ -24,8 +24,6 @@ quickly setup a new Mac for work and fun.
 ## Roadmap
 
 * Secrets vault
-* Username as a variable
-* Full `vim` setup
 
 ## Author
 

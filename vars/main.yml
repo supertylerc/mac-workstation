@@ -1,4 +1,5 @@
 ---
+mac_workstation_user: tyler
 downloads: ~/.ansible-downloads/
 dotfiles_repo: https://github.com/supertylerc/dotfiles.git
 dotfiles_repo_local_destination: ~/Dropbox/Development/GitHub/dotfiles
