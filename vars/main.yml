@@ -5,9 +5,7 @@ dotfiles_repo_local_destination: ~/Dropbox/Development/GitHub/dotfiles
 dotfiles_files:
   - .gitconfig
   - .gitignore
-  - .inputrc
   - tmux.conf
-  - .vimrc
   - .zpreztorc
   - .zshrc
 
