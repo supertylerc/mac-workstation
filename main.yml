@@ -17,3 +17,29 @@
     - name: Run .osx dotfiles.
       shell: ~/.osx --no-restart
       changed_when: false
+
+    # This should be a role...
+    - name: Clone Prezto
+      git:
+        repo: https://github.com/sorin-ionescu/prezto
+        dest: ~/.zprezto
+
+    - name: Link Prezto Files
+      file:
+        state: link
+        src: ~/.zprezto/runcoms/{{ item }}
+        path: ~/.{{ item }}
+      with_items:
+        - zlogin
+        - zlogout
+        - zprofile
+        - zshenv
+
+    # This should be a role...
+    - name: Clone Janus
+      git:
+        repo: https://github.com/carlhuda/janus
+        dest: ~/.vim
+
+    - name: Install Janus
+      command: rake chdir=~/.vim
