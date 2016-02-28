@@ -24,7 +24,7 @@ homebrew_installed_packages:
   - gpg
   - hub
   - ipcalc
-  - llvm
+  - llvm35
   - mcrypt
   - nvm
   - openssl
