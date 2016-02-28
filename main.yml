@@ -13,52 +13,15 @@
   tasks:
     - include: tasks/ansible-setup.yml
 
-    # TODO: Refactor tasks to includes
     # TODO: Use sudo once .osx can be run via root with no user interaction.
     - name: Run .osx dotfiles.
       shell: ~/.osx --no-restart
       changed_when: false
 
-    # TODO: Make this a role
-    - name: Clone Prezto
-      git:
-        repo: https://github.com/sorin-ionescu/prezto
-        dest: ~/.zprezto
-
-    - name: Link Prezto Files
-      file:
-        state: link
-        src: ~/.zprezto/runcoms/{{ item }}
-        path: ~/.{{ item }}
-      with_items:
-        - zlogin
-        - zlogout
-        - zprofile
-        - zshenv
-
-    # TODO: Make this a role
-    - name: Clone Janus
-      git:
-        repo: https://github.com/carlhuda/janus
-        dest: ~/.vim
-        update: no
-
-    - name: Install/Update Janus
-      command: rake chdir=~/.vim
-
-    # TODO: Make this idempotent
-    - name: Install gem_home
-      command: brew install --HEAD https://raw.github.com/postmodern/gem_home/master/homebrew/gem_home.rb
-        creates=/usr/local/share/gem_home/gem_home.sh
-
     - name: Generate SSH Key
       command: ssh-keygen -t rsa -b 8192 -N '' -f ~/.ssh/id_rsa
         creates=~/.ssh/id_rsa
 
-    - name: Install Ruby 2.3.0
-      command: ruby-install ruby 2.3.0
-        creates=~/.rubies/ruby-2.3.0
-
-    - name: Install Rubinius 3.16
-      command: ruby-install rbx 3.16
-        creates=~/.rubies/rbx-3.16
+    - include: tasks/prezto.yml
+    - include: tasks/janus.yml
+    - include: tasks/ruby.yml

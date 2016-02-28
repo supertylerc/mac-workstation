@@ -1,0 +1,10 @@
+---
+# TODO: Make this a role
+- name: Clone Janus
+  git:
+    repo: https://github.com/carlhuda/janus
+    dest: ~/.vim
+    update: no
+
+- name: Install/Update Janus
+  command: rake chdir=~/.vim

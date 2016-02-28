@@ -1,0 +1,17 @@
+---
+# TODO: Make this a role
+- name: Clone Prezto
+  git:
+    repo: https://github.com/sorin-ionescu/prezto
+    dest: ~/.zprezto
+
+- name: Link Prezto Files
+  file:
+    state: link
+    src: ~/.zprezto/runcoms/{{ item }}
+    path: ~/.{{ item }}
+  with_items:
+    - zlogin
+    - zlogout
+    - zprofile
+    - zshenv

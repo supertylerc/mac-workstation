@@ -1,0 +1,13 @@
+---
+# TODO: Make this idempotent
+- name: Install gem_home
+  command: brew install --HEAD https://raw.github.com/postmodern/gem_home/master/homebrew/gem_home.rb
+    creates=/usr/local/share/gem_home/gem_home.sh
+
+- name: Install Ruby 2.3.0
+  command: ruby-install ruby 2.3.0
+    creates=~/.rubies/ruby-2.3.0
+
+- name: Install Rubinius 3.16
+  command: ruby-install rbx 3.16
+    creates=~/.rubies/rbx-3.16
