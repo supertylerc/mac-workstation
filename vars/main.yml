@@ -4,6 +4,9 @@ downloads: ~/.ansible-downloads/
 dotfiles_repo: https://github.com/supertylerc/dotfiles.git
 dotfiles_repo_local_destination: ~/Dropbox/Development/GitHub/dotfiles
 dotfiles_files:
+  - .dircolors
+  - .functions 
+  - .gemrc
   - .gitconfig
   - .gitignore
   - .janus
