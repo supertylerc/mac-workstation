@@ -49,6 +49,7 @@
     # TODO: Make this idempotent
     - name: Install gem_home
       command: brew install --HEAD https://raw.github.com/postmodern/gem_home/master/homebrew/gem_home.rb
+        creates=/usr/local/share/gem_home/gem_home.sh
 
     - name: Generate SSH Key
       command: ssh-keygen -t rsa -b 8192 -N '' -f ~/.ssh/id_rsa
@@ -59,5 +60,5 @@
         creates=~/.rubies/ruby-2.3.0
 
     - name: Install Rubinius 3.16
-      command: ruby-install rbx 3.16 -- --llvm-config=/usr/local/opt/llvm/bin/llvm-config
+      command: ruby-install rbx 3.16
         creates=~/.rubies/rbx-3.16
