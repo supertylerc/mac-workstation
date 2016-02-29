@@ -38,6 +38,7 @@ homebrew_installed_packages:
   - tmux
   - wget
   - wrk
+  - zsh
 
 homebrew_taps:
   - caskroom/cask
