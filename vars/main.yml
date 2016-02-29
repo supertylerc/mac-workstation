@@ -25,9 +25,9 @@ homebrew_installed_packages:
   - docker
   - git
   - gpg
+  - homebrew/versions/llvm35
   - hub
   - ipcalc
-  - llvm35
   - mcrypt
   - nvm
   - openssl
