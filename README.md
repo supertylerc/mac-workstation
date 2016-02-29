@@ -18,8 +18,8 @@ quickly setup a new Mac for work and fun.
 3. `sudo mkdir /etc/ansible`
 4. `sudo chown $(whoami) /etc/ansible`
 5. `git clone https://github.com/supertylerc/mac-workstation && cd $_`
-6. `ansible-galaxy install -r requirements.txt`
-7. `ansible-playbook main.yml -i inventory --ask-sudo-pass`
+6. `ansible-galaxy install -r requirements.yml`
+7. `ansible-playbook main.yml`
 
 ## Roadmap
 
