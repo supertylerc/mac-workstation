@@ -57,6 +57,7 @@ homebrew_cask_apps:
   - nvalt
   - pomotodo
   - skype
+  - slack
   - seil
   - vagrant
   - vagrant-manager
