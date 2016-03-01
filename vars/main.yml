@@ -53,6 +53,7 @@ homebrew_cask_apps:
   - dropbox
   - fing
   - iterm2
+  - keepassx
   - licecap
   - macvim
   - menumeters
