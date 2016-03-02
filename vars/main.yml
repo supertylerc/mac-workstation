@@ -35,6 +35,7 @@ homebrew_installed_packages:
   - python
   - ssh-copy-id
   - tmux
+  - tree
   - wget
   - wrk
   - zsh
