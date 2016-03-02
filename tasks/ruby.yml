@@ -1,0 +1,29 @@
+---
+
+- name: Check for GPG Key
+  command: gpg --list-keys --with-colons
+  register: gpg_keys
+  changed_when: false
+  tags: ruby
+
+- name: Install GPG Key
+  command: gpg --keyserver hkp://keys.gnupg.net --recv-keys D39DC0E3
+  when: not "'D39DC0E3' in {{ gpg_keys.stdout }}"
+  tags: ruby
+
+- name: Detect RVM Directory
+  stat: path="/Users/{{ mac_workstation_user }}/.rvm"
+  register: rvm_path
+  tags: ruby
+
+- name: Get RVM Installer
+  get_url:
+    url: https://get.rvm.io
+    dest: /tmp/rvm-installer.sh
+  when: not rvm_path.stat.exists
+  tags: ruby
+
+- name: Install RVM
+  command: /tmp/rvm-installer.sh stable
+  when: not rvm_path.stat.exists
+  tags: ruby
