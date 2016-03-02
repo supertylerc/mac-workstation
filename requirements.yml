@@ -1,3 +1,4 @@
 ---
 - src: geerlingguy.dotfiles
 - src: geerlingguy.homebrew
+- src: rvm_io.rvm1-ruby
