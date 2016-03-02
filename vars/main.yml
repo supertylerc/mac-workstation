@@ -21,7 +21,6 @@ homebrew_upgrade_all_packages: yes
 homebrew_installed_packages:
   - autoconf
   - boot2docker
-  - chruby
   - curl
   - docker
   - git
@@ -34,7 +33,6 @@ homebrew_installed_packages:
   - openssl
   - packer
   - python
-  - ruby-install
   - ssh-copy-id
   - tmux
   - wget
