@@ -1,5 +1,5 @@
 ---
-mac_workstation_user: tyler
+mac_workstation_user: tylerchristiansen
 downloads: ~/.ansible-downloads/
 dotfiles_repo: https://github.com/supertylerc/dotfiles.git
 dotfiles_repo_local_destination: ~/Dropbox/Development/GitHub/dotfiles
@@ -64,3 +64,10 @@ homebrew_cask_apps:
   - vagrant-manager
   - vlc
   - virtualbox
+
+rvm1_user: tylerchristiansen
+rvm1_install_flags: '--user-install'
+rvm1_install_path: '/Users/tylerchristiansen/.rvm'
+rvm1_rubies:
+  - 'ruby-2.3.0'
+  - 'rbx-3.16'

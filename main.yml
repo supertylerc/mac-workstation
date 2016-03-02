@@ -9,6 +9,7 @@
   roles:
     - geerlingguy.homebrew
     - geerlingguy.dotfiles
+    - { role:  rvm_io.rvm1-ruby, tags: ruby, become: true }
 
   tasks:
     - include: tasks/ansible-setup.yml
