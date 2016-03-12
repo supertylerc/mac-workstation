@@ -37,6 +37,7 @@ homebrew_installed_packages:
   - tmux
   - tree
   - wget
+  - wireshark
   - wrk
   - zsh
 
