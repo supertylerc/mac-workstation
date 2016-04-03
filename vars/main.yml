@@ -25,6 +25,7 @@ homebrew_installed_packages:
   - gpg
   - homebrew/versions/llvm35
   - hub
+  - hunspell
   - ipcalc
   - mcrypt
   - nvm
