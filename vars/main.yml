@@ -23,6 +23,7 @@ homebrew_installed_packages:
   - curl
   - git
   - gpg
+  - graphviz
   - homebrew/versions/llvm35
   - hub
   - hunspell
