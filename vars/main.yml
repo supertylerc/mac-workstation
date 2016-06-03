@@ -30,6 +30,7 @@ homebrew_installed_packages:
   - ipcalc
   - iperf
   - mcrypt
+  - mysql
   - nvm
   - openssl
   - packer
